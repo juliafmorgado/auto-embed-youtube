@@ -15,7 +15,7 @@
             .catch(error => console.log('error', error));
     }
     
-    var iframes = document.getElementsByClassName('latestVideoEmbed');
-    for (var i = 0, len = iframes.length; i < len; i++) {
+    const iframes = document.getElementsByClassName('latestVideoEmbed');
+    for (let i = 0, len = iframes.length; i < len; i++) {
         loadVideo(iframes[i]);
     }
